@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤌🏽</title>
+    <link rel="stylesheet" href="/Users/lennywachira/Documents/MoringaCoding/CSS/styles.css"/>
+</head>
+<body>
+    <div>
+    <h1> <strong>Art Pesto!😮‍💨</strong></h1>
+    </div>
+    <div>
+    <h2> <strong>This is a recipe for Art Pesto!!</strong></h2>
+    </div>
+    <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-psjJdp2XMb2tzCwp6u4WTdjwaVOpWYq-A&usqp=CAU" top="50%" left="50%">
+    </div>
+    <div>
+        <h3> <strong>Ingredients:</strong></h3>
+    </div>
+        <div>
+        <ul>
+            <li>Pasta</li>
+            <li>Chicken</li>
+            <li>Basil</li>
+            <li>Cheese</li>
+            <li>Salt</li>
+            <li>Olive Oil</li>
+        </ul>
+        </div>
+        <div>
+        <h4>Procedure:</h4>
+        </div>
+        <div>
+        <ol>
+            <li>Cook the pasta or sum</li>
+            <li>Add the chicken (Make sure it's marinated bro😒)</li>
+            <li>Add the basil to make it green or sum</li>
+            <li>Add some cheese because you think you're Italian</li>
+            <li><strong>YOU'RE DONE!</strong></li>
+        </ol>
+        </div>
+        <div>
+        <h5>Anyways, search it up yourself:(art pesto is too good fr🤩)</h5>
+        </div>
+        <div>
+        <form id="form" role="search">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button> Search </button>
+        </form>
+        </div>
+        <script>
+            const f = document.getElementById('form');
+            const q = document.getElementById('query');
+            const google = 'https://www.google.com/search?q=';
+            
+      
+            function submitted(event) {
+              event.preventDefault();
+              const url = google + q.value;
+              const win = window.open(url, '_blank');
+              win.focus();
+            }
+      
+            f.addEventListener('submit', submitted);
+          </script>
+          <div class="tab">
+            <button class="tablinks" onclick="openRest(event, 'Artcaffe')">Artcaffe</button>
+            <button class="tablinks" onclick="openRest(event, 'Java')">Java</button>
+           </div>
+           <div id="Artcaffe" class="tabcontent">
+            <video width="320" height="230" controls>
+                <iframe width="966" height="604" src="https://www.youtube.com/embed/SQD37pXmH_E" title="fan requests @SAIGEx  to raise multiple $1 accounts | 2024 update" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </video>
+            <p> Their art pesto is too fucking good</p>
+            <nav>
+                <a href="https://www.artcaffe.co.ke/images/pdf/QR%20MENU-MM+A-SEPTEMBER%202022%20UPDATED.pdf">Here's Artcaffe</a>
+            </nav>
+           </div>
+           <div id="Java" class="tabcontent">
+            <video width="320" height="230" controls>
+                <source src="https://www.youtube.com/watch?v=q2a4hqCL-Xc" type="video/mp4">
+                Your browser does not support the video.😭
+            </video>
+            <p>Java's kinda overrated ngl but still good nonetheless</p>
+            <nav>
+                <a href="https://www.javahouseafrica.com/wp-content/uploads/2022/08/Java-A4-Master-Menu-Rev-Allergens-11-1.pdf">Here's Java</a>
+            </nav>
+           </div>
+           <script>
+            function openRest(evt, Restname) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(Restname).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+           </script>
+
+        
+</body>
+</html>
